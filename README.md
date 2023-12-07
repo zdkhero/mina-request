@@ -24,7 +24,7 @@ npm install mina-request
 
 > 📌  构建 npm：
 >
-> ​	在安装后，需要要在微信开发者工具，点击 `工具` ➡️ `构建 npm`
+> ​	安装包后，需要在微信开发者工具中进行 npm 构建，点击 `工具` ➡️ `构建 npm`
 
 
 
@@ -90,11 +90,21 @@ instance.request({
   method: 'POST'
 })
 
-// get 实例方法，
-instance.get('/path') // 不需要请参数，不需要自定义请求配置
-instance.get('/path', { id: 123 }) // 不需要自定义请求配置
-instance.get('/path', { id: 123 }, { timeout: 15000 }) // 需要请求参数，也需要自定义请求配置
-instance.get('/path', null, { timeout: 15000 }) // 不需要请求参数，但需要自定义请求配置
+// get 实例方法
+
+// 不需要请参数，不需要自定义请求配置
+instance.get('/path')
+
+// 不需要自定义请求配置
+instance.get('/path', { id: 123 })
+
+// 需要请求参数，也需要自定义请求配置
+instance.get('/path', { id: 123 }, { timeout: 15000 })
+
+// 不需要请求参数，但需要自定义请求配置
+instance.get('/path', null, { timeout: 15000 })
+
+// delete、post、put 方法同上
 
 ```
 
@@ -149,6 +159,7 @@ instance.get('/path', null, { timeout: 15000 }) // 不需要请求参数，但�
 instance.defaults.baseURL = 'https://some-domain.com/api/'
 instance.defaults.header['token'] = token
 instance.defaults.isLoading = fasle
+
 ```
 
 <br />
