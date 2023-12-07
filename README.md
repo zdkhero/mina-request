@@ -129,7 +129,7 @@ instance.get('/path', null, { timeout: 15000 }) // 不需要请求参数，但�
 
 
 
-#### 全局 axios 默认值
+#### 全局默认值
 
 ```js
 instance.defaults.baseURL = 'https://some-domain.com/api/'
