@@ -28,7 +28,7 @@ npm install mina-request
 
 
 
-
+<br />
 
 ### 实例
 
@@ -92,6 +92,8 @@ instance.get('/path', null, { timeout: 15000 }) // 不需要请求参数，但�
 
 
 
+<br />
+
 ### 请求配置
 
 
@@ -118,6 +120,8 @@ instance.get('/path', null, { timeout: 15000 }) // 不需要请求参数，但�
 
 
 
+
+<br />
 
 ### 默认配置
 
@@ -182,7 +186,7 @@ instance.get('/longRequest', {
 
 
 
-
+<br />
 
 ### 拦截器
 
@@ -222,7 +226,7 @@ instance.interceptors.response = (response) => {
 
 
 
-
+<br />
 
 ### 本地资源上传
 
@@ -254,7 +258,7 @@ await instance.upload('/path', filePath, name, { ... })
 
 
 
-
+<br />
 
 ### 并发请求
 
@@ -278,7 +282,7 @@ await instance.all(promise1, promise2, promise3)
 
 
 
-
+<br />
 
 ### 完整示例
 
