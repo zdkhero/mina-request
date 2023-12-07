@@ -374,12 +374,12 @@ export default instance
 
 ```js
 // 导入封装的 网络请求模块实例
-import http from '../utils/http'
+import instance from '../utils/instance'
 
 /**
  * @description 用来获取首页轮播图数据
  */
-export const reqSwiperData = () => http.get('/index/findBanner')
+export const reqSwiperData = () => instance.get('/index/findBanner')
 
 ```
 
