@@ -1,0 +1,12 @@
+{
+  "name": "mina-request",
+  "version": "1.0.1",
+  "description": "小程序网络请求工具，包含：请求拦截器、响应拦截器、并发请求、文件上传 API 封装等功能",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
