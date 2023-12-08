@@ -47,7 +47,7 @@ import WxRequest from 'mina-request'
 
 // 对 WxRequest 进行实例化
 const instance = new WxRequest({
-  baseURL: 'https://some-domain.com/api/', // 使用时请换成真实接口
+  baseURL: 'https://some-domain.com/api', // 使用时请换成真实接口
   timeout: 1000, // 超时时长
   isLoading: false // 是否使用默认的 loading 效果
 })
@@ -92,7 +92,7 @@ instance.request({
 
 // get 实例方法
 
-// 不需要请参数，不需要自定义请求配置
+// 不需要请求参数，也不需要自定义请求配置
 instance.get('/path')
 
 // 不需要自定义请求配置
